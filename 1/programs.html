@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>5CornersDaycare</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Coming+Soon&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;family=Sour+Gummy:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="programs-page" id="top">
+    <!--FIXED TOP NAVIGATION BAR-->
+    <header class="navbar">
+      <div class="topbar-inner">
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+        <!-- inner container to control width and alignment -->
+        <!-- LOGO -->
+        <a class="logo" href="index.html">
+          <!--clicking it returns to home-->
+          <img alt="5 corners daycare logo" src="img/logo.jpg" />
+          <!--logo image-->
+        </a>
+        <!-- NAVIGATION -->
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="technology.html">Technology</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="location.html">Location &amp; Hours</a>
+
+          <!-- WhatsApp -->
+          <a
+            class="nav-social"
+            href="https://wa.me/16044965050"
+            target="_blank"
+            rel="noopener"
+            aria-label="Message 5 Corners Daycare on WhatsApp"
+          >
+            <img src="img/whatsapp_icon.png" alt="" />
+          </a>
+
+          <!-- Instagram -->
+          <a
+            class="nav-social"
+            href="https://www.instagram.com/5corners_daycare/"
+            target="_blank"
+            rel="noopener"
+            aria-label="5 Corners Daycare on Instagram"
+          >
+            <img src="img/icon_insta.webp" alt="" />
+          </a>
+
+          <!-- Book a Tour -->
+          <a class="tour-button" href="contact.html">Book a Tour</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <!--this is the part ontop of the page for refrence -->
+      <h2 class="hero">Our Programs</h2>
+      <p class="lead">Our programs support learning, play, and Care.</p>
+      <!-- Programs offered by daycare by card-->
+      <section aria-label="Program listings" class="product-grid">
+        <!--program 1 for infants and todllers -->
+        <article class="program-card">
+          <h3 class="program-title">Infant &amp; Toddler Program</h3>
+          <p class="program-age">(1 month – 3 years)</p>
+          <img
+            alt="Infant and toddler play area"
+            class="programs-img"
+            src="img/infant-toddler.jpg"
+          />
+          <p class="program-info">
+            A nurturing program designed for infants and toddlers with a focus
+            on early development and gentle care.
+          </p>
+          <p class="ratio program-info">Ratio: 1 teacher for 4 children</p>
+          <p class="program-info">
+            Contact us for pricing.We help with getting Goverment Subsidy.
+          </p>
+        </article>
+        <!--program 2 for all ages-->
+        <article class="program-card">
+          <h3 class="program-title">Multi-Age Care Program</h3>
+          <p class="program-age">(upto – 12 years)</p>
+          <img
+            alt="children of different ages playing together"
+            class="programs-img"
+            src="img/multiage.jpg"
+          />
+          <p class="program-info">
+            A flexible program where children of different ages learn and play
+            together in a supportive environment.
+          </p>
+          <p class="ratio program-info">Ratio: 1 teacher for 8 children</p>
+          <p class="program-info">
+            Contact us for pricing. We help with getting Goverment Subsidy.
+          </p>
+        </article>
+        <!-- program 3 dor fulltime -->
+        <article class="program-card">
+          <h3 class="program-title">Full-Time Daycare Program</h3>
+          <p class="program-age">(3 years– 5 years)</p>
+          <img
+            alt="Preschool children doing creative activities"
+            class="programs-img"
+            src="img/preschool.webp"
+          />
+          <p class="program-info">
+            A structured preschool program that supports learning, creativity,
+            and school readiness.
+          </p>
+          <p class="ratio program-info">Ratio: 1 teacher for 8 children</p>
+          <p class="program-info">
+            Contact us for pricing.We help with getting Goverment Subsidy.
+          </p>
+        </article>
+      </section>
+      <section class="program-schedule-info">
+        <h3>Flexible Schedules</h3>
+
+        <p>
+          We provide flexible schedules to meet the needs of your family.
+          <a href="contact.html" class="intext-link"
+            >Contact us to learn more.</a
+          >
+        </p>
+      </section>
+    </main>
+    <script>
+      const menuButton = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav");
+
+      menuButton.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
